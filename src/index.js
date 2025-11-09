@@ -1,5 +1,5 @@
 import Htoast from './components/Htoast.vue'
-import useHtoast from './composables/useHtoast'
+import { useHtoast, useHtoastStore } from './composables/useHtoast'
 
 // Auto-install when vue is found (e.g., in browser via <script> tag)
 let GlobalVue = null
@@ -13,5 +13,5 @@ if (GlobalVue) {
   GlobalVue.component('Htoast', Htoast)
 }
 
-export { Htoast, useHtoast }
+export { Htoast, useHtoast, useHtoastStore }
 export default Htoast

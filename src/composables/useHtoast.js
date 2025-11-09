@@ -27,6 +27,7 @@ const toastStore = reactive({
     }
 
     this.toasts.push(toast)
+    return toast
   },
   getToastIcon(type) {
     const icons = {
@@ -51,3 +52,9 @@ export function useHtoast() {
 }
 
 export const useHtoastStore = () => toastStore
+
+// Add a default export for compatibility
+export default {
+  useHtoast,
+  useHtoastStore
+}
