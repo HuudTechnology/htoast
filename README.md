@@ -1,8 +1,12 @@
-# Htoast - Modern Toast Notifications for Vue 3
+# Htoast 🍞
 
-![Htoast Demo](https://example.com/htoast-demo.gif)
+[![npm version](https://img.shields.io/npm/v/@huud/htoast.svg)](https://www.npmjs.com/package/@huud/htoast)
+[![npm downloads](https://img.shields.io/npm/dm/@huud/htoast.svg)](https://www.npmjs.com/package/@huud/htoast)
+[![License](https://img.shields.io/npm/l/@huud/htoast.svg)](https://github.com/HuudTechnology/htoast/blob/main/LICENSE)
 
-A beautiful, customizable toast notification system for Vue 3 with full Tailwind CSS support, undo actions, and progress bars.
+Modern toast notifications for Vue 3 with Tailwind CSS support and undo actions by Huud Inc.
+
+![Htoast Demo](https://github.com/HuudTechnology/htoast/raw/main/demo.gif)
 
 ## Features
 
@@ -12,13 +16,13 @@ A beautiful, customizable toast notification system for Vue 3 with full Tailwind
 - 📱 **Responsive Design** - Works perfectly on all screen sizes
 - 🌓 **Dark Mode Support** - Automatically adapts to system dark mode
 - ⚡ **Performance Optimized** - Minimal bundle size, no external dependencies
-- 🎯 **TypeScript Support** - Full type definitions included
+- 🎯 **TypeScript Support** - Full type definitions included.
 
 ## Installation
 
 ```bash
-npm install htoast
+npm install @huud/htoast
 # or
-yarn add htoast
+yarn add @huud/htoast
 # or
-pnpm add htoas
+pnpm add @huud/htoast
