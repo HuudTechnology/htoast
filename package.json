@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/htoast.git"
+    "url": "git+https://github.com/HuudTechnology/htoast.git"
   },
   "keywords": [
     "vue",
@@ -58,7 +58,7 @@
   "author": "Huud Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/htoast/issues"
+    "url": "https://github.com/HuudTechnology/htoast/issues"
   },
-  "homepage": "https://github.com/yourusername/htoast#readme"
+  "homepage": "https://github.com/HuudTechnology/htoast#readme"
 }

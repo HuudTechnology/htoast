@@ -1,0 +1,28 @@
+
+## 4. Build and Publish
+
+### Build Script (`build/prepare-types.mjs`)
+```javascript
+import { readFile, writeFile } from 'fs/promises'
+import { join } from 'path'
+
+async function prepareTypes() {
+  try {
+    const typesPath = join(process.cwd(), 'dist', 'index.d.ts')
+    let typesContent = await readFile(typesPath, 'utf-8')
+    
+    // Fix TypeScript declaration issues
+    typesContent = typesContent.replace(
+      /import\('\.\/[^']*'\)\.DefineComponent/g,
+      'import("vue").DefineComponent'
+    )
+    
+    await writeFile(typesPath, typesContent)
+    console.log('✅ TypeScript definitions prepared successfully')
+  } catch (error) {
+    console.error('❌ Error preparing TypeScript definitions:', error)
+    process.exit(1)
+  }
+}
+
+await prepareTypes()

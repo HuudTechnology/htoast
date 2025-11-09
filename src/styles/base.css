@@ -1,0 +1,55 @@
+@layer components {
+  .htoast-container {
+    @apply fixed top-5 left-1/2 transform -translate-x-1/2 z-[9999] flex flex-col items-center gap-3 max-w-[400px] w-full px-4;
+  }
+  
+  .htoast {
+    @apply flex items-center gap-3 w-full max-w-[340px] min-h-[40px] relative overflow-hidden shadow-toast rounded-toast border transition-all duration-300;
+  }
+  
+  .htoast-content {
+    @apply flex items-center gap-3 w-full justify-between px-2 py-1;
+  }
+  
+  .htoast-icon {
+    @apply min-w-[30px] min-h-[30px] flex items-center justify-center text-[1.2rem];
+  }
+  
+  .htoast-message {
+    @apply text-xs font-medium leading-[1.4] flex-1 mr-2 truncate;
+  }
+  
+  .htoast-cta button {
+    @apply bg-transparent border-none cursor-pointer text-xs font-semibold px-1.5 py-0.5 rounded transition-all duration-200 hover:underline;
+  }
+  
+  .htoast-counter span {
+    @apply px-1.5 py-0.5 rounded-toast text-[10px] min-w-[16px] text-center inline-block font-medium;
+  }
+  
+  .htoast-progress {
+    @apply absolute bottom-0 left-0 right-0 h-[3px] bg-opacity-5 overflow-hidden rounded-b-toast;
+  }
+  
+  .progress-bar-for-htoast {
+    @apply h-full rounded-b-toast-progress transition-[width] duration-100 ease-linear;
+  }
+}
+
+@layer utilities {
+  .rounded-toast {
+    @apply rounded-[10px];
+  }
+  
+  .rounded-toast-full {
+    @apply rounded-full;
+  }
+  
+  .rounded-b-toast {
+    @apply rounded-b-[10px];
+  }
+  
+  .rounded-b-toast-progress {
+    @apply rounded-b-[20px] rounded-tr-[50px];
+  }
+}
