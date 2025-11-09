@@ -1,5 +1,5 @@
 {
-  "name": "htoast",
+  "name": "@huud/htoast",
   "version": "1.0.0",
   "description": "Modern toast notifications for Vue 3 with Tailwind CSS support by Huud Inc.",
   "main": "./dist/htoast.cjs.js",
